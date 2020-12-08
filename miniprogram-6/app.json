@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/search/search",
+    "pages/picture/picture",
+    "pages/my/my"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "熊东东绘本",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "selectedColor": "#d81e06",
+    "list": [{
+        "pagePath": "pages/search/search",
+        "text": "发现",
+        "iconPath": "/static/tabbar/search.png",
+        "selectedIconPath": "/static/tabbar/search_r.png"
+      },
+      {
+        "pagePath": "pages/picture/picture",
+        "text": "绘本",
+        "iconPath": "/static/tabbar/picture.png",
+        "selectedIconPath": "/static/tabbar/picture_r.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "/static/tabbar/my.png",
+        "selectedIconPath": "/static/tabbar/my_r.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "useExtendedLib": {
+    "kbone": true,
+    "weui": true
+  }
+}

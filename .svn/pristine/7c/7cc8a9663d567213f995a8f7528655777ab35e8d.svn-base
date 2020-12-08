@@ -1,0 +1,35 @@
+<!--components/love/love.wxml-->
+<scroll-view class="love-view_H" bindscroll="scroll" style="width: 740rpx;white-space: nowrap;">
+  <view class="recommend" wx:for="{{love}}" style="display: flex;background-color: #fff; margin:5rpx; ">
+    <view class="recommend-image" style="padding: 10rpx;">
+      <image src="{{item.thumb}}" style="width: 200rpx; height: 200rpx;border-radius: 10rpx;margin: 10rpx;"></image>
+    </view>
+    <view class="recommend-text" style="padding: 20rpx;width:65%;">
+      <view class="recommend-title" style="font-size:36rpx">{{item.title}}</view>
+      <view class="recommend-reason" style="margin-top:15rp;keep-all;word-wrap: break-word;white-space: pre-line;">{{item.relevant.introduction}}</view>
+      <view style="display: flex;align-items:flex-end;justify-content:space-between;">
+        <view class="star-v">
+          评分: <text class="star">8.7</text>
+        </view>
+        <view style="display: flex;">购买推荐：
+          <import src="../../template/star.wxml" />
+          <template is="star" data="{{star}}"></template>
+        </view>
+      </view>
+      <view class="recommend-type-" style="display: flex;justify-content:space-between;">
+        <view style="display: flex;">
+          <view wx:for="{{item.labelname}}" style="border: 1rpx solid;border-radius: 9rpx;padding:0 5rpx;margin: 5rpx;"
+            wx:key="item">
+            {{item}}</view>
+        </view>
+        <view style="display: flex;align-items: center;">
+          <view>播放量：{{item.bf_count}}</view>
+          <image src="/static/image/play.png" style="width: 24rpx; height: 24rpx;"></image>
+        </view>
+      </view>
+    </view>
+    <view class="zhuti-right" style="height: 50rpx;width: 25rpx;margin-left: 10rpx;margin-right: 10rpx;">
+      <image src="../../static/image/bookmarks.png" style="width: 25rpx;height: 25rpx;align-items: center;"></image>
+    </view>
+  </view>
+</scroll-view>

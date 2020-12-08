@@ -1,0 +1,54 @@
+<!--pages/my/my.wxml-->
+<view class="searchView" style="">
+  <!-- <button bindtap="login" style="border: 1rpx solid red;margin: 20rpx auto;">登录</button>
+  <button bindtap="check">验证</button> -->
+  <view style="">
+    <view style="background-color:pink;height: 150rpx;">
+
+    </view>
+  </view>
+  <view style="background-color: #fff;">
+    <view class="title" style="display: flex;">
+      <view>
+        <image style="width: 150rpx;height: 150rpx;padding: 10rpx;" src="/static/image/logo (2).png"></image>
+      </view>
+      <view style="width: 65%;padding: 10rpx;align-items: center;">
+        <text class="title-text">未更新</text>
+        <view>
+          <button style="width: 150rpx;padding: 10rpx;border: 1rpx solid;font-size:25rpx;" bindtap="login">登录</button>
+        </view>
+      </view>
+
+    </view>
+    <view class="nav">
+      <view class="navItem" wx:for="{{about}}" wx:key="name">
+        <image class="icon" src="{{item.icon}}"></image>
+        <view>{{item.name}}</view>
+      </view>
+    </view>
+    <view>
+      <view class="nav2">
+        <view wx:for="{{about2}}" wx:key="">
+          <mp-cells>
+            <mp-cell link url="" hover value="{{item.name}}" footer="">
+              <image slot="title" src="{{item.icon}}"
+                style="margin-right: 40rpx;vertical-align: middle;width:60rpx; height: 60rpx;"></image>
+            </mp-cell>
+          </mp-cells>
+        </view>
+        <!-- 
+        <mp-cells title="带跳转的列表项">
+            <mp-cell link hover value="有hover效果" footer="说明文字">
+                <image slot="title" src="/static/image/msr_my.png" style="margin-right: 16px;vertical-align: middle;width:20px; height: 20px;"></image>
+            </mp-cell>
+            <mp-cell link value="无hover效果" footer="说明文字">
+                <image slot="icon" src="/static/image/msr_my.png" style="margin-right: 16px;vertical-align: middle;width:20px; height: 20px;"></image>
+            </mp-cell>
+            <mp-cell link url="../index" value="无hover效果，带跳转URL" footer="说明文字">
+                <image slot="icon" src="/static/image/msr_my.png" style="margin-right: 16px;vertical-align: middle;width:20px; height: 20px;"></image>
+            </mp-cell>
+        </mp-cells> -->
+      </view>
+    </view>
+  </view>
+</view>

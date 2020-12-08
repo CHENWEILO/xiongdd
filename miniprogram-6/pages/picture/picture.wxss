@@ -1,0 +1,14 @@
+/* pages/picture/picture.wxss */
+
+.bright789_view_hide{
+    display: none;
+}
+
+.bright789_view_show{
+    display: block;
+}
+.content{
+    flex: 1;
+    overflow: hidden;
+  }
+  

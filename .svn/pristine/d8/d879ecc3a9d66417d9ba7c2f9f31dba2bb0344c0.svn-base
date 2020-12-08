@@ -1,0 +1,66 @@
+<view style="display: flex;">
+  <!-- <view style="width: 200rpx;" bindtap="onChangeShowState">{{showView?'=':'>'}}</view> -->
+  <view>
+    <view wx:for="{{Category}}" class="huiben" style="display: flex;background-color: #fff; margin:5rpx; ">
+      <view>{{item.name1}}
+        <view style="width: 200rpx;" bindtap="onChangeShowState">{{showView?'=':'>'}}
+        </view>
+        <view wx:for="{{child}}" class="bright789_view_hide{{showView?'bright789_view_show':''}}">
+          <view>
+            {{item.yuefen}}
+            <view>
+              <love love="{{love}}"></love>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <view wx:for="{{Category}}" class="huiben" style="display: flex;background-color: #fff; margin:5rpx; ">
+      <view>{{item.name2}}
+        <view style="width: 200rpx;" bindtap="onChangeShowState1">{{showView1?'=':'>'}}
+        </view>
+        <view wx:for="{{child}}" class="bright789_view_hide{{showView1?'bright789_view_show':''}}">
+          <view>
+            {{item.name}}
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <view wx:for="{{Category}}" class="huiben" style="display: flex;background-color: #fff; margin:5rpx; ">
+      <view>{{item.name3}}
+        <view style="width: 200rpx;" bindtap="onChangeShowState2">{{showView2?'=':'>'}}
+        </view>
+        <view wx:for="{{child}}" class="bright789_view_hide{{showView2?'bright789_view_show':''}}">
+          <view>
+            {{item.name1}}
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <view wx:for="{{Category}}" class="huiben" style="display: flex;background-color: #fff; margin:5rpx; ">
+      <view>{{item.name4}}
+        <view style="width: 200rpx;" bindtap="onChangeShowState3">{{showView3?'=':'>'}}
+        </view>
+        <view wx:for="{{child}}" class="bright789_view_hide{{showView3?'bright789_view_show':''}}">
+          <view>
+            {{item.age}}
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view>
+    <view class="inner">
+      <scroll-view class="content" scroll-y>
+        <view class="item">
+          <image src="/images/fengjing.jpg"></image>
+          <text>风景随风,正如最后的光明</text>
+        </view>
+      </scroll-view>
+    </view>
+    
+  </view>
+</view>

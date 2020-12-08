@@ -1,0 +1,5 @@
+<template name="star">
+  <block wx:for="{{star}}" wx:key="*this">
+    <image class="starImg" src="{{item==1?'/static/image/star_r.png':'/static/image/star.png'}}"></image>
+  </block>
+</template>

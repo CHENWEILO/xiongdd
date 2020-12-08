@@ -1,0 +1,13 @@
+<template name="title">
+  <view class="title">
+    <view class="title-content">
+      <text class="title-text">{{title}}</text>
+      <view class="title-line"></view>
+      <view class="title-subhead">{{subhead}}</view>
+    </view>
+    <view wx:if="{{hasBtn}}" class="title-btn">
+      <image src="/static/image/refresh.png"></image>
+      <text>换一本</text>
+    </view>
+  </view>
+</template>

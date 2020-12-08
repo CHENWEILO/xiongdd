@@ -1,0 +1,50 @@
+/* pages/my/my.wxss */
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  margin: 20rpx;
+  text-align: center;
+  line-height: 38rpx;
+}
+
+.icon {
+  width: 100rpx;
+  height: 100rpx;
+}
+
+.title {
+  margin: 20rpx;
+}
+
+.title-text {
+  font-size: 36rpx;
+}
+/* .title-btn {
+  height: 44rpx;
+  width: 50rpx;
+  border: 1rpx solid;
+  border-radius: 20rpx;
+  line-height: 44rpx;
+  padding:0 20rpx;
+  
+} */
+
+.nav2 {
+
+  justify-content: space-around;
+  margin: 20rpx;
+  
+  line-height: 38rpx;
+}
+.navItem2{
+  display: flex;
+
+  
+}
+
+.icon2 {
+  
+  width: 100rpx;
+  height: 100rpx;
+}

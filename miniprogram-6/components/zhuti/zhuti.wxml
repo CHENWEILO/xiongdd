@@ -1,0 +1,24 @@
+<!--components/zhuti/zhuti.wxml-->
+<scroll-view class="zhuti-view_H" bindscroll="scroll" style="width: 100%;white-space: nowrap;">
+  <view wx:for="{{zhutiti}}" class="zhuti" style="display: flex;background-color: #fff; margin:5rpx; ">
+    <view class="zhuti-image" style="padding: 10rpx;">
+      <image src="{{item.thumb}}" style="width: 200rpx; height: 200rpx;border-radius: 10rpx;margin: 10rpx;"></image>
+    </view>
+    <view class="zhuti-text" style="width: 65%;padding: 20rpx; flex:1;display: flex;flex-direction: column;justify-content:space-between;">
+      <view class="zhuti-title" style="font-size:36rpx">{{item.name}}</view>
+      <view class="zhuti-reason" style="flex:1;margin-top:15rpx;word-wrap: break-word;white-space: pre-line;">{{item.content}}</view>
+      <view class="zhuti-type" style="display: flex;align-items:flex-end;justify-content:space-between;">
+        <view style="display: flex;">
+          <text>{{item.count}}本</text>
+        </view>
+        <view style="display: flex;align-items: center;">
+          <view>播放量：{{item.bf_count}}</view>
+          <image src="/static/image/play.png" style="width: 24rpx; height: 24rpx;"></image>
+        </view>
+      </view>
+    </view>
+    <view class="zhuti-right" style="{{item.bf_count}}">
+      <image src="../../static/image/bookmarks.png" style="width: 25rpx;height: 25rpx;align-items: center;"></image>
+    </view>
+  </view>
+</scroll-view>

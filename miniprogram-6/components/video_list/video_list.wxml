@@ -1,0 +1,18 @@
+<!--components/video_list/video_list.wxml-->
+
+<scroll-view class="video_list-view_H" scroll-x="true" bindscroll="scroll" style="width: 100%;white-space: nowrap;">
+  <view wx:for="{{video_list}}" wx:key=''
+    style="display: inline-block;position: relative; margin-left: 20rpx;padding: 10rpx; background-color: #fff;"
+    wx:key="title">
+    <view style="width:350rpx; margin-left:20rpx; background-color: #fff;">
+      <image src="{{item.thumb}}" style="width: 350rpx; height: 180rpx;"></image>
+      <view
+        style="width: 330rpx; font-size:26rpx; font-weight:bold; overflow: hidden; white-space:nowrap; text-overflow:ellipsis;">
+        {{item.navname}}
+      </view>
+      <view style="font-size:20rpx; color:#aba9a9">
+        {{item.title}}
+      </view>
+    </view>
+  </view>
+</scroll-view>

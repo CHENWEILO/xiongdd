@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "scroll":"/components/scroll/scroll",
+    "zhuti":"/components/zhuti/zhuti",
+    "love":"/components/love/love",
+    "video_list":"/components/video_list/video_list"
+  }
+}
